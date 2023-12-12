@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <div class="input">
+          <label class="input-name" for="days">Day</label>
+          <input
+            class="input-value"
+            id="day"
+            type="number"
+            placeholder="DD"
+            name="days"
+          />
+          <label id="day-no-valid" class="no-valid no-valid-text" for="days"
+            >Must be a valid day</label
+          >
+          <label id="day-empty" class="empty empty-text" for="days"
+            >This field is required</label
+          >
+        </div>
+        <div class="input">
+          <label class="input-name" for="months">Month</label>
+          <input
+            class="input-value"
+            id="month"
+            type="number"
+            placeholder="MM"
+            name="months"
+          />
+          <label id="month-no-valid" class="no-valid no-valid-text" for="months"
+            >Must be valid a Month</label
+          >
+          <label id="month-empty" class="empty empty-text" for="months"
+            >This field is required</label
+          >
+        </div>
+        <div class="input">
+          <label class="input-name" for="years">Year</label>
+          <input
+            class="input-value"
+            id="year"
+            type="number"
+            placeholder="YYYY"
+            name="years"
+          />
+          <label id="year-no-valid" class="no-valid no-valid-text" for="years"
+            >Must be in Past</label
+          >
+          <label id="year-empty" class="empty empty-text" for="years"
+            >This field is required</label
+          >
+        </div>
+      </div>
+      <div class="button-and-line">
+        <div class="line"></div>
+        <button class="calc-buttton">
+          <img
+            class="arrow-image"
+            src="./assets/images/icon-arrow.svg"
+            alt="arrow"
+          />
+        </button>
+      </div>
+      <div class="value-container">
+        <div class="value">
+          <p id="value-years" class="value-number">--</p>
+          <p class="value-name">years</p>
+        </div>
+        <div class="value">
+          <p id="value-months" class="value-number">--</p>
+          <p class="value-name">months</p>
+        </div>
+        <div class="value">
+          <p id="value-days" class="value-number">--</p>
+          <p class="value-name">days</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
